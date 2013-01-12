@@ -1,0 +1,34 @@
+doctype
+html
+	head
+		title settings.title
+		<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		link(type='text/css', href='/app.css', rel='stylesheet')
+	body
+		form(action="/log", method="get")
+			div#nav
+				ul#date
+					li 
+						h3 Choose the day
+					li
+						select(name="day")
+							each d in days
+								option= d
+				ul#channels
+					li 
+						h2 irc channels
+					each ch in channels
+						li
+							input(class="button", type="submit", name="channel", value=ch) 
+		div#header
+			a(href='/')
+				h1#logo irc logger
+		div#log-container
+			ul
+				each mex in messages
+					li
+						span(class='time')= mex.time
+						!{mex.text}
