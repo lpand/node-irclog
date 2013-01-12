@@ -1,8 +1,8 @@
 var	express = require('express') 
 	, app = express()
 	,	CONF = require('config')
-	,	util = require('./misc/util.js')
-	, LogsProvider = require('./providers/logsprovider.js')
+	,	util = require('irclog-util')
+	, LogsProvider = require('irclog-provider')
 	, logsProv;
 
 /* Config */
