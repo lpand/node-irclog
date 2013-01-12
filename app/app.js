@@ -56,7 +56,7 @@ app.get('/log', function(req, res) {
 	});
 });
 
-app.listen(8080, function (){
+app.listen(CONF.express.port, CONF.express.host, function (){
   console.log(' Express server listening on port %d', 8080 );
   console.log(' Settings:\n view folder: %s\n', __dirname + CONF.express.view.dir);
 });
