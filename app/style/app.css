@@ -54,13 +54,6 @@ ul {
 #channels input {
   width: 125px;
 }
-/*#channels li {
-  border-bottom: 1px solid #C5BC8E;
-}
-
-#channels li:first-child, #channels li:last-child {
-  border-bottom: 0;
-}*/
 
 #nav {
   float: left;
@@ -119,50 +112,9 @@ a:hover {
   margin: 0 15px 0 3px;
 }
 
-/*div {
-  border: 2px dashed blue;
-}
-
-#nav ul {
-  float: left;
-  margin-left: 80px;
-
-}
-
-#nav h2 {
-  font-family: "Lucida Grande", Verdana, Tahoma;
-  color: #C44D58;
-}
-
-#nav h3 {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-}
-
-
-
-
-#logo {
-  float: left;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 30px;
-  padding-bottom: 10px;
-  border-bottom: 7px solid #C44D58;
-  font-size: 1.7em;
-  font-family: Tahoma;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1;
-  color: white;
-  text-decoration: none;
-}
-
-*/
-
 .button{
   font-size: 1em;
-border:1px solid #8bcf54; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; text-align: center; color: #FFFFFF; background-color: #a9db80;
+border:1px solid #8A9B0F; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; text-align: center; color: #FFFFFF; background-color: #a9db80;
  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a9db80), color-stop(100%, #96c56f));
  background-image: -webkit-linear-gradient(top, #a9db80, #96c56f);
  background-image: -moz-linear-gradient(top, #a9db80, #96c56f);

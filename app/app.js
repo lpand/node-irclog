@@ -71,23 +71,23 @@ var listMessages = function (messages) {
 		if (m.event == CONF.events.JOIN) {
 			s = m.nick +' ('+m.host+') '+'has joined the channel';
 			s = '<span class="join">'+ s +'</span>';
-			ary.push({time: m.time, text: s});
+			ary.unshift({time: m.time, text: s});
 		} else if (m.event == CONF.events.PART) {
 			s = m.nick +' left the channel';
 			s = '<span class="part">'+ s +'</span>';
-			ary.push({time: m.time, text: s});	
+			ary.unshift({time: m.time, text: s});	
 		} else if (m.event == CONF.events.NICK) {
 			s = m.oldnick +' now is '+ m.newnick;
 			s = '<span class="nick">'+ s +'</span>';
-			ary.push({time: m.time, text: s});	
+			ary.unshift({time: m.time, text: s});	
 		} else if (m.event == CONF.events.MESSAGE) {
 			s = '<span class="name">&lt;'+ m.nick +'&gt;</span>'+ m.text;
 			console.log(s);
-			ary.push({time: m.time, text: s});	
+			ary.unshift({time: m.time, text: s});	
 		} else if (m.event == CONF.events.ME) {
 			s = m.from +' '+ m.text;
 			s = '<span class="me">'+ s +'</span>';
-			ary.push({time: m.time, text: s});	
+			ary.unshift({time: m.time, text: s});	
 		}
 	}
 	return ary;
